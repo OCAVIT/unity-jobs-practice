@@ -1,0 +1,305 @@
+{
+    "scenario": "p2-jobs-log",
+    "title": "Часть 2: IJob и вывод логарифмов в лог",
+    "target": "editor",
+    "connection": "Editor (Play Mode)",
+    "frames": 209,
+    "avgFps": 49.0556640625,
+    "low1Fps": 4.7605671882629398,
+    "minFps": 4.680690288543701,
+    "avgFrameMs": 20.385005950927736,
+    "p99FrameMs": 210.0590057373047,
+    "maxFrameMs": 213.64369201660157,
+    "avgCpuMs": 8.369071960449219,
+    "maxCpuMs": 211.31008911132813,
+    "avgPlayerLoopMs": 8.369253158569336,
+    "avgOutsideLoopMs": 12.015753746032715,
+    "framesOver16": 56,
+    "framesOver33": 4,
+    "framesOver100": 4,
+    "gcKbPerFrame": 107.40131378173828,
+    "gcTotalMb": 21.9207763671875,
+    "gcCollects": 4,
+    "gcCollectMs": 8.03600025177002,
+    "avgBatches": 86.79904174804688,
+    "avgSetPass": 85.60286712646485,
+    "avgTrianglesK": 11604.9462890625,
+    "usedStartMb": 1147.5697021484375,
+    "usedPeakMb": 1375.958740234375,
+    "textureStartMb": 148.85549926757813,
+    "texturePeakMb": 148.85549926757813,
+    "objectsStart": 18173,
+    "objectsPeak": 18173,
+    "worstFrame": 195,
+    "worstCpuMs": 211.31008911132813,
+    "culprit": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStackTrace() [Invoke]",
+    "topSelf": [
+        {
+            "name": "LogStringToConsole",
+            "ms": 395.4805908203125,
+            "calls": 16000,
+            "kb": 0.0
+        },
+        {
+            "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStackTrace() [Invoke]",
+            "ms": 339.0001220703125,
+            "calls": 16000,
+            "kb": 0.0
+        },
+        {
+            "name": "Semaphore.WaitForSignal",
+            "ms": 147.3435821533203,
+            "calls": 209,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Prepare",
+            "ms": 146.3858642578125,
+            "calls": 209,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 72.9997787475586,
+            "calls": 210,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 65.23828887939453,
+            "calls": 1486,
+            "kb": 0.0
+        },
+        {
+            "name": "Idle",
+            "ms": 61.39744567871094,
+            "calls": 1063,
+            "kb": 0.0
+        },
+        {
+            "name": "Orbit.OutputToLog",
+            "ms": 49.5713005065918,
+            "calls": 209,
+            "kb": 0.0
+        },
+        {
+            "name": "WaitForJobGroupID",
+            "ms": 44.03409194946289,
+            "calls": 1745,
+            "kb": 0.0
+        },
+        {
+            "name": "Render.Prepare",
+            "ms": 41.996620178222659,
+            "calls": 209,
+            "kb": 0.0
+        }
+    ],
+    "topGcOwners": [
+        {
+            "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStackTrace() [Invoke]",
+            "ms": 0.0,
+            "calls": 16000,
+            "kb": 18531.25
+        },
+        {
+            "name": "Orbit.OutputToLog",
+            "ms": 0.0,
+            "calls": 96000,
+            "kb": 3915.09765625
+        },
+        {
+            "name": "Assembly-CSharp.dll!PlaceSystem::PlaceHud.Update() [Invoke]",
+            "ms": 0.0,
+            "calls": 18,
+            "kb": 0.52734375
+        }
+    ],
+    "worstSelf": [
+        {
+            "name": "LogStringToConsole",
+            "ms": 100.87884521484375,
+            "calls": 4000,
+            "kb": 0.0
+        },
+        {
+            "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStackTrace() [Invoke]",
+            "ms": 85.11318969726563,
+            "calls": 4000,
+            "kb": 0.0
+        },
+        {
+            "name": "Orbit.OutputToLog",
+            "ms": 13.015968322753907,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "Orbit.ScheduleLogJobs",
+            "ms": 2.2725000381469728,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "GC.Collect",
+            "ms": 2.1131999492645265,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "Orbit.CompleteJobs",
+            "ms": 1.2660000324249268,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "GC.Alloc",
+            "ms": 1.2524999380111695,
+            "calls": 28000,
+            "kb": 0.0
+        },
+        {
+            "name": "JobHandle.Complete",
+            "ms": 0.9847000241279602,
+            "calls": 4001,
+            "kb": 0.0
+        }
+    ],
+    "worstPath": [
+        {
+            "name": "PlayerLoop",
+            "ms": 211.31019592285157,
+            "calls": 3,
+            "kb": 5611.625
+        },
+        {
+            "name": "UpdateScene",
+            "ms": 208.3780059814453,
+            "calls": 1,
+            "kb": 5611.625
+        },
+        {
+            "name": "PreLateUpdate.ScriptRunBehaviourLateUpdate",
+            "ms": 205.19619750976563,
+            "calls": 1,
+            "kb": 5611.625
+        },
+        {
+            "name": "LateBehaviourUpdate",
+            "ms": 205.1955108642578,
+            "calls": 1,
+            "kb": 5611.625
+        },
+        {
+            "name": "Assembly-CSharp.dll!OrbitSystem::OrbitField.LateUpdate() [Invoke]",
+            "ms": 205.19261169433595,
+            "calls": 1,
+            "kb": 5611.625
+        },
+        {
+            "name": "Orbit.OutputToLog",
+            "ms": 202.3520050048828,
+            "calls": 1,
+            "kb": 5611.625
+        },
+        {
+            "name": "LogStringToConsole",
+            "ms": 186.23184204101563,
+            "calls": 4000,
+            "kb": 4632.8125
+        },
+        {
+            "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStackTrace() [Invoke]",
+            "ms": 85.35298919677735,
+            "calls": 4000,
+            "kb": 4632.8125
+        }
+    ],
+    "renderThreadSelf": [
+        {
+            "name": "RenderLoop",
+            "ms": 2391.4150390625,
+            "calls": 520,
+            "kb": 0.0
+        },
+        {
+            "name": "GfxDeviceD3D12.WaitForGPU",
+            "ms": 636.7499389648438,
+            "calls": 518,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Render",
+            "ms": 229.28628540039063,
+            "calls": 209,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 49.78761291503906,
+            "calls": 658,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderTexture.ResolveAA",
+            "ms": 36.15449905395508,
+            "calls": 209,
+            "kb": 0.0
+        },
+        {
+            "name": "WaitForJobGroupID",
+            "ms": 15.774300575256348,
+            "calls": 166,
+            "kb": 0.0
+        }
+    ],
+    "focus": "LogJob",
+    "focusThreads": 15,
+    "focusFrames": 4,
+    "focusFrame": 195,
+    "focusThreadsPerFrame": 15.0,
+    "focusMsPerFrame": 16.940284729003908,
+    "focusSpanMs": 1.4062000513076783,
+    "orbitMainMs": 4.212775707244873,
+    "orbitMainMaxMs": 207.5714111328125,
+    "jobWorkMsPerFrame": 27.503023147583009,
+    "mainWaitForJobsMs": 0.21068944036960603,
+    "jobThreadSelf": [
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 1824.3489990234375,
+            "calls": 29296,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 954.8880615234375,
+            "calls": 3134,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Sort",
+            "ms": 705.741943359375,
+            "calls": 10437,
+            "kb": 0.0
+        },
+        {
+            "name": "UpdateRendererBoundingVolumes",
+            "ms": 561.7838134765625,
+            "calls": 3343,
+            "kb": 0.0
+        },
+        {
+            "name": "UnityEngine.CoreModule.dll!::ExecuteJobFunction.Invoke() [Invoke]",
+            "ms": 438.9012756347656,
+            "calls": 19127,
+            "kb": 0.0
+        },
+        {
+            "name": "SplitJobConsumer",
+            "ms": 402.9697570800781,
+            "calls": 14137,
+            "kb": 0.0
+        }
+    ]
+}

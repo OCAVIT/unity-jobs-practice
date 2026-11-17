@@ -1,0 +1,281 @@
+{
+    "scenario": "p2-every-frame",
+    "title": "Часть 2: IJob для каждого объекта каждый кадр",
+    "target": "editor",
+    "connection": "Editor (Play Mode)",
+    "frames": 255,
+    "avgFps": 56.82177734375,
+    "low1Fps": 35.730491638183597,
+    "minFps": 32.143592834472659,
+    "avgFrameMs": 17.598886489868165,
+    "p99FrameMs": 27.987300872802736,
+    "maxFrameMs": 31.11039924621582,
+    "avgCpuMs": 10.973407745361329,
+    "maxCpuMs": 23.45680046081543,
+    "avgPlayerLoopMs": 10.973706245422364,
+    "avgOutsideLoopMs": 6.625178813934326,
+    "framesOver16": 138,
+    "framesOver33": 0,
+    "framesOver100": 0,
+    "gcKbPerFrame": 0.0020680148154497148,
+    "gcTotalMb": 0.000514984130859375,
+    "gcCollects": 0,
+    "gcCollectMs": 0.0,
+    "avgBatches": 85.99607849121094,
+    "avgSetPass": 85.68627166748047,
+    "avgTrianglesK": 11537.287109375,
+    "usedStartMb": 1383.226806640625,
+    "usedPeakMb": 2545.311279296875,
+    "textureStartMb": 148.85549926757813,
+    "texturePeakMb": 148.85549926757813,
+    "objectsStart": 18173,
+    "objectsPeak": 18173,
+    "worstFrame": 87,
+    "worstCpuMs": 23.45680046081543,
+    "culprit": "Orbit.ScheduleLogJobs",
+    "topSelf": [
+        {
+            "name": "Orbit.ScheduleLogJobs",
+            "ms": 714.4419555664063,
+            "calls": 255,
+            "kb": 0.0
+        },
+        {
+            "name": "Orbit.CompleteJobs",
+            "ms": 382.2288818359375,
+            "calls": 255,
+            "kb": 0.0
+        },
+        {
+            "name": "JobHandle.Complete",
+            "ms": 286.9517517089844,
+            "calls": 1020255,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Prepare",
+            "ms": 208.73715209960938,
+            "calls": 255,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 177.44903564453126,
+            "calls": 2888,
+            "kb": 0.0
+        },
+        {
+            "name": "Idle",
+            "ms": 146.20785522460938,
+            "calls": 1606,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 104.46430206298828,
+            "calls": 266,
+            "kb": 0.0
+        },
+        {
+            "name": "WaitForJobGroupID",
+            "ms": 101.9839859008789,
+            "calls": 18089,
+            "kb": 0.0
+        },
+        {
+            "name": "Render.Prepare",
+            "ms": 95.4797134399414,
+            "calls": 255,
+            "kb": 0.0
+        },
+        {
+            "name": "TransformChangeSystem",
+            "ms": 87.02678680419922,
+            "calls": 4512,
+            "kb": 0.0
+        }
+    ],
+    "topGcOwners": [
+        {
+            "name": "Assembly-CSharp.dll!PlaceSystem::PlaceHud.Update() [Invoke]",
+            "ms": 0.0,
+            "calls": 18,
+            "kb": 0.52734375
+        }
+    ],
+    "worstSelf": [
+        {
+            "name": "Orbit.ScheduleLogJobs",
+            "ms": 7.832399845123291,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "Orbit.CompleteJobs",
+            "ms": 2.975399971008301,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "Idle",
+            "ms": 2.7279999256134035,
+            "calls": 5,
+            "kb": 0.0
+        },
+        {
+            "name": "JobHandle.Complete",
+            "ms": 1.909000039100647,
+            "calls": 4001,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Prepare",
+            "ms": 1.7892999649047852,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "TransformChangeSystem",
+            "ms": 1.0080000162124634,
+            "calls": 18,
+            "kb": 0.0
+        },
+        {
+            "name": "Render.Prepare",
+            "ms": 0.9114000201225281,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "BehaviourUpdate",
+            "ms": 0.6388999819755554,
+            "calls": 1,
+            "kb": 0.0
+        }
+    ],
+    "worstPath": [
+        {
+            "name": "PlayerLoop",
+            "ms": 23.457799911499025,
+            "calls": 3,
+            "kb": 0.0
+        },
+        {
+            "name": "UpdateScene",
+            "ms": 16.726999282836915,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "Update.ScriptRunBehaviourUpdate",
+            "ms": 9.122699737548829,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "BehaviourUpdate",
+            "ms": 9.121399879455567,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "Assembly-CSharp.dll!OrbitSystem::OrbitField.Update() [Invoke]",
+            "ms": 8.43340015411377,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "Orbit.ScheduleLogJobs",
+            "ms": 7.832399845123291,
+            "calls": 1,
+            "kb": 0.0
+        }
+    ],
+    "renderThreadSelf": [
+        {
+            "name": "RenderLoop",
+            "ms": 1808.642822265625,
+            "calls": 1460,
+            "kb": 0.0
+        },
+        {
+            "name": "GfxDeviceD3D12.WaitForGPU",
+            "ms": 1461.3143310546875,
+            "calls": 342,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Render",
+            "ms": 111.8941879272461,
+            "calls": 255,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 106.9228744506836,
+            "calls": 1615,
+            "kb": 0.0
+        },
+        {
+            "name": "WaitForJobGroupID",
+            "ms": 52.44169998168945,
+            "calls": 239,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderTexture.ResolveAA",
+            "ms": 40.0952033996582,
+            "calls": 255,
+            "kb": 0.0
+        }
+    ],
+    "focus": "LogJob",
+    "focusThreads": 15,
+    "focusFrames": 255,
+    "focusFrame": 216,
+    "focusThreadsPerFrame": 14.709803581237793,
+    "focusMsPerFrame": 16.989850997924806,
+    "focusSpanMs": 1.4554636478424073,
+    "orbitMainMs": 5.983229160308838,
+    "orbitMainMaxMs": 13.311199188232422,
+    "jobWorkMsPerFrame": 56.80625915527344,
+    "mainWaitForJobsMs": 0.3999372124671936,
+    "jobThreadSelf": [
+        {
+            "name": "UnityEngine.CoreModule.dll!::ExecuteJobFunction.Invoke() [Invoke]",
+            "ms": 3940.755859375,
+            "calls": 1020956,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 2504.04052734375,
+            "calls": 35624,
+            "kb": 0.0
+        },
+        {
+            "name": "Profiler.ParseThreadData",
+            "ms": 2382.87939453125,
+            "calls": 45428,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 1374.2254638671875,
+            "calls": 3814,
+            "kb": 0.0
+        },
+        {
+            "name": "UpdateRendererBoundingVolumes",
+            "ms": 884.2118530273438,
+            "calls": 4136,
+            "kb": 0.0
+        },
+        {
+            "name": "LogJob",
+            "ms": 876.541015625,
+            "calls": 1016876,
+            "kb": 0.0
+        }
+    ]
+}

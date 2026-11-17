@@ -1,0 +1,269 @@
+{
+    "scenario": "p1-jobs-screen",
+    "title": "Часть 1: Jobs и вывод позиций на экран",
+    "target": "player",
+    "connection": "WindowsPlayer(2,DESKTOP-96IN7JK)",
+    "frames": 268,
+    "avgFps": 59.820960998535159,
+    "low1Fps": 58.3876838684082,
+    "minFps": 57.419456481933597,
+    "avgFrameMs": 16.716548919677736,
+    "p99FrameMs": 17.12689971923828,
+    "maxFrameMs": 17.415699005126954,
+    "avgCpuMs": 3.8733105659484865,
+    "maxCpuMs": 6.678800582885742,
+    "avgPlayerLoopMs": 16.69651222229004,
+    "avgOutsideLoopMs": 0.02003592811524868,
+    "framesOver16": 0,
+    "framesOver33": 0,
+    "framesOver100": 0,
+    "gcKbPerFrame": 8.138773918151856,
+    "gcTotalMb": 2.1300697326660158,
+    "gcCollects": 4,
+    "gcCollectMs": 2.0327000617980959,
+    "avgBatches": 85.20895385742188,
+    "avgSetPass": 86.88433074951172,
+    "avgTrianglesK": 11353.373046875,
+    "usedStartMb": 316.4580078125,
+    "usedPeakMb": 316.9768981933594,
+    "textureStartMb": 53.46890640258789,
+    "texturePeakMb": 53.46890640258789,
+    "objectsStart": 16339,
+    "objectsPeak": 16339,
+    "worstFrame": 95,
+    "worstCpuMs": 6.678800582885742,
+    "culprit": "TimeUpdate.WaitForLastPresentationAndUpdateTime",
+    "topSelf": [
+        {
+            "name": "CanvasUpdate.PreRender",
+            "ms": 207.54638671875,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Prepare",
+            "ms": 157.43284606933595,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 62.7234001159668,
+            "calls": 283,
+            "kb": 0.0
+        },
+        {
+            "name": "Orbit.OutputToScreen",
+            "ms": 60.509098052978519,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "Orbit.ScheduleMoveJob",
+            "ms": 55.63079071044922,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "UpdateRendererBoundingVolumes",
+            "ms": 55.52823257446289,
+            "calls": 601,
+            "kb": 0.0
+        },
+        {
+            "name": "TransformChangeSystem",
+            "ms": 47.97232437133789,
+            "calls": 4382,
+            "kb": 0.0
+        },
+        {
+            "name": "Render.Prepare",
+            "ms": 42.984188079833987,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "WaitForJobGroupID",
+            "ms": 35.39698028564453,
+            "calls": 1551,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Render",
+            "ms": 34.559906005859378,
+            "calls": 268,
+            "kb": 0.0
+        }
+    ],
+    "topGcOwners": [
+        {
+            "name": "Orbit.OutputToScreen",
+            "ms": 0.0,
+            "calls": 43684,
+            "kb": 1818.6640625
+        },
+        {
+            "name": "CanvasUpdate.PreRender",
+            "ms": 0.0,
+            "calls": 1,
+            "kb": 362.0
+        },
+        {
+            "name": "Assembly-CSharp.dll!PlaceSystem::PlaceHud.Update() [Invoke]",
+            "ms": 0.0,
+            "calls": 18,
+            "kb": 0.52734375
+        }
+    ],
+    "worstSelf": [
+        {
+            "name": "RenderForwardOpaque.Prepare",
+            "ms": 1.2660000324249268,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "CanvasUpdate.PreRender",
+            "ms": 1.0285999774932862,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "Render.Prepare",
+            "ms": 0.7276999950408936,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "Orbit.ScheduleMoveJob",
+            "ms": 0.41620001196861269,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 0.39149999618530276,
+            "calls": 2,
+            "kb": 0.0
+        },
+        {
+            "name": "UpdateRendererBoundingVolumes",
+            "ms": 0.3822999894618988,
+            "calls": 3,
+            "kb": 0.0
+        },
+        {
+            "name": "Orbit.OutputToScreen",
+            "ms": 0.29409998655319216,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "TransformChangeSystem",
+            "ms": 0.21500001847743989,
+            "calls": 17,
+            "kb": 0.0
+        }
+    ],
+    "worstPath": [
+        {
+            "name": "PlayerLoop",
+            "ms": 16.562400817871095,
+            "calls": 1,
+            "kb": 6.787109375
+        },
+        {
+            "name": "TimeUpdate.WaitForLastPresentationAndUpdateTime",
+            "ms": 9.901599884033204,
+            "calls": 1,
+            "kb": 0.0
+        }
+    ],
+    "renderThreadSelf": [
+        {
+            "name": "RenderLoop",
+            "ms": 315.0694274902344,
+            "calls": 2229,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Render",
+            "ms": 71.4105224609375,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderTexture.ResolveAA",
+            "ms": 24.721710205078126,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "Clear",
+            "ms": 13.695302963256836,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "CreateCommittedResourceWithTag",
+            "ms": 13.565500259399414,
+            "calls": 17,
+            "kb": 0.0
+        },
+        {
+            "name": "Gfx.DrawDynamic",
+            "ms": 13.349892616271973,
+            "calls": 553,
+            "kb": 0.0
+        }
+    ],
+    "focus": "OrbitJob",
+    "focusThreads": 15,
+    "focusFrames": 268,
+    "focusFrame": 21,
+    "focusThreadsPerFrame": 12.638059616088868,
+    "focusMsPerFrame": 1.8047956228256226,
+    "focusSpanMs": 0.21022753417491914,
+    "orbitMainMs": 0.6173132061958313,
+    "orbitMainMaxMs": 1.5413000583648682,
+    "jobWorkMsPerFrame": 24.99919319152832,
+    "mainWaitForJobsMs": 0.13207828998565675,
+    "jobThreadSelf": [
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 2317.689453125,
+            "calls": 41947,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Sort",
+            "ms": 915.7105712890625,
+            "calls": 13376,
+            "kb": 0.0
+        },
+        {
+            "name": "UpdateRendererBoundingVolumes",
+            "ms": 902.7451171875,
+            "calls": 4223,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 901.4852294921875,
+            "calls": 4005,
+            "kb": 0.0
+        },
+        {
+            "name": "UnityEngine.CoreModule.dll!::ExecuteJobFunction.Invoke() [Invoke]",
+            "ms": 463.0665588378906,
+            "calls": 4013,
+            "kb": 0.0
+        },
+        {
+            "name": "SplitJobConsumer",
+            "ms": 448.0993347167969,
+            "calls": 20782,
+            "kb": 0.0
+        }
+    ]
+}

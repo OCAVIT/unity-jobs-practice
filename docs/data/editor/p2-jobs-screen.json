@@ -1,0 +1,269 @@
+{
+    "scenario": "p2-jobs-screen",
+    "title": "Часть 2: IJob и вывод логарифмов на экран",
+    "target": "editor",
+    "connection": "Editor (Play Mode)",
+    "frames": 269,
+    "avgFps": 59.967124938964847,
+    "low1Fps": 39.3914794921875,
+    "minFps": 35.41214370727539,
+    "avgFrameMs": 16.675804138183595,
+    "p99FrameMs": 25.386199951171876,
+    "maxFrameMs": 28.23889923095703,
+    "avgCpuMs": 4.805511951446533,
+    "maxCpuMs": 14.072999954223633,
+    "avgPlayerLoopMs": 4.8056960105896,
+    "avgOutsideLoopMs": 11.870108604431153,
+    "framesOver16": 73,
+    "framesOver33": 0,
+    "framesOver100": 0,
+    "gcKbPerFrame": 4.917757987976074,
+    "gcTotalMb": 1.2918720245361329,
+    "gcCollects": 1,
+    "gcCollectMs": 2.3106000423431398,
+    "avgBatches": 87.01858520507813,
+    "avgSetPass": 85.66171264648438,
+    "avgTrianglesK": 11619.4873046875,
+    "usedStartMb": 1361.686279296875,
+    "usedPeakMb": 1431.903076171875,
+    "textureStartMb": 148.85549926757813,
+    "texturePeakMb": 148.85549926757813,
+    "objectsStart": 18173,
+    "objectsPeak": 18173,
+    "worstFrame": 148,
+    "worstCpuMs": 14.072999954223633,
+    "culprit": "Semaphore.WaitForSignal",
+    "topSelf": [
+        {
+            "name": "Semaphore.WaitForSignal",
+            "ms": 229.2159881591797,
+            "calls": 269,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Prepare",
+            "ms": 191.70980834960938,
+            "calls": 269,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 95.54517364501953,
+            "calls": 269,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 92.66069030761719,
+            "calls": 2202,
+            "kb": 0.0
+        },
+        {
+            "name": "Idle",
+            "ms": 85.69540405273438,
+            "calls": 1333,
+            "kb": 0.0
+        },
+        {
+            "name": "Render.Prepare",
+            "ms": 59.634605407714847,
+            "calls": 269,
+            "kb": 0.0
+        },
+        {
+            "name": "WaitForJobGroupID",
+            "ms": 56.57206344604492,
+            "calls": 2308,
+            "kb": 0.0
+        },
+        {
+            "name": "TransformChangeSystem",
+            "ms": 50.063533782958987,
+            "calls": 4681,
+            "kb": 0.0
+        },
+        {
+            "name": "UpdateRendererBoundingVolumes",
+            "ms": 44.980796813964847,
+            "calls": 548,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Render",
+            "ms": 36.35160827636719,
+            "calls": 269,
+            "kb": 0.0
+        }
+    ],
+    "topGcOwners": [
+        {
+            "name": "Orbit.OutputToScreen",
+            "ms": 0.0,
+            "calls": 32818,
+            "kb": 1322.349609375
+        },
+        {
+            "name": "Assembly-CSharp.dll!PlaceSystem::PlaceHud.Update() [Invoke]",
+            "ms": 0.0,
+            "calls": 18,
+            "kb": 0.52734375
+        }
+    ],
+    "worstSelf": [
+        {
+            "name": "Semaphore.WaitForSignal",
+            "ms": 9.884599685668946,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Prepare",
+            "ms": 0.6413000226020813,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "Idle",
+            "ms": 0.5634000301361084,
+            "calls": 4,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 0.5110999941825867,
+            "calls": 4,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 0.3515999913215637,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "Render.Prepare",
+            "ms": 0.2858000099658966,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "TransformChangeSystem",
+            "ms": 0.18719999492168427,
+            "calls": 18,
+            "kb": 0.0
+        },
+        {
+            "name": "WaitForJobGroupID",
+            "ms": 0.17739999294281007,
+            "calls": 7,
+            "kb": 0.0
+        }
+    ],
+    "worstPath": [
+        {
+            "name": "PlayerLoop",
+            "ms": 14.073100090026856,
+            "calls": 3,
+            "kb": 4.916015625
+        },
+        {
+            "name": "UpdateScene",
+            "ms": 11.0108003616333,
+            "calls": 1,
+            "kb": 4.916015625
+        },
+        {
+            "name": "Semaphore.WaitForSignal",
+            "ms": 9.884599685668946,
+            "calls": 1,
+            "kb": 0.0
+        }
+    ],
+    "renderThreadSelf": [
+        {
+            "name": "RenderLoop",
+            "ms": 3088.942626953125,
+            "calls": 651,
+            "kb": 0.0
+        },
+        {
+            "name": "GfxDeviceD3D12.WaitForGPU",
+            "ms": 804.0054321289063,
+            "calls": 660,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Render",
+            "ms": 324.9116516113281,
+            "calls": 269,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 67.32591247558594,
+            "calls": 899,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderTexture.ResolveAA",
+            "ms": 41.022705078125,
+            "calls": 269,
+            "kb": 0.0
+        },
+        {
+            "name": "WaitForJobGroupID",
+            "ms": 22.496803283691408,
+            "calls": 218,
+            "kb": 0.0
+        }
+    ],
+    "focus": "LogJob",
+    "focusThreads": 15,
+    "focusFrames": 4,
+    "focusFrame": 183,
+    "focusThreadsPerFrame": 15.0,
+    "focusMsPerFrame": 18.76809310913086,
+    "focusSpanMs": 1.5765999555587769,
+    "orbitMainMs": 0.43242496252059939,
+    "orbitMainMaxMs": 5.368299961090088,
+    "jobWorkMsPerFrame": 27.5617733001709,
+    "mainWaitForJobsMs": 0.21030506491661073,
+    "jobThreadSelf": [
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 2330.576416015625,
+            "calls": 36926,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 1270.88525390625,
+            "calls": 4035,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Sort",
+            "ms": 902.9190673828125,
+            "calls": 13407,
+            "kb": 0.0
+        },
+        {
+            "name": "UpdateRendererBoundingVolumes",
+            "ms": 743.3356323242188,
+            "calls": 4294,
+            "kb": 0.0
+        },
+        {
+            "name": "UnityEngine.CoreModule.dll!::ExecuteJobFunction.Invoke() [Invoke]",
+            "ms": 549.5011596679688,
+            "calls": 19920,
+            "kb": 0.0
+        },
+        {
+            "name": "SplitJobConsumer",
+            "ms": 489.407958984375,
+            "calls": 17751,
+            "kb": 0.0
+        }
+    ]
+}

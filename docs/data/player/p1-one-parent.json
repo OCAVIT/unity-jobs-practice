@@ -1,0 +1,257 @@
+{
+    "scenario": "p1-one-parent",
+    "title": "Часть 1: Jobs, но все объекты под одним родителем",
+    "target": "player",
+    "connection": "WindowsPlayer(2,DESKTOP-96IN7JK)",
+    "frames": 268,
+    "avgFps": 59.78153991699219,
+    "low1Fps": 58.25163269042969,
+    "minFps": 57.920650482177737,
+    "avgFrameMs": 16.727571487426759,
+    "p99FrameMs": 17.166900634765626,
+    "maxFrameMs": 17.264999389648439,
+    "avgCpuMs": 3.07023024559021,
+    "maxCpuMs": 5.813499450683594,
+    "avgPlayerLoopMs": 16.711881637573243,
+    "avgOutsideLoopMs": 0.01569058932363987,
+    "framesOver16": 0,
+    "framesOver33": 0,
+    "framesOver100": 0,
+    "gcKbPerFrame": 0.0019677006639540197,
+    "gcTotalMb": 0.000514984130859375,
+    "gcCollects": 0,
+    "gcCollectMs": 0.0,
+    "avgBatches": 85.67537689208985,
+    "avgSetPass": 86.88059997558594,
+    "avgTrianglesK": 11392.890625,
+    "usedStartMb": 315.9078674316406,
+    "usedPeakMb": 315.995849609375,
+    "textureStartMb": 53.46890640258789,
+    "texturePeakMb": 53.46890640258789,
+    "objectsStart": 16341,
+    "objectsPeak": 16341,
+    "worstFrame": 253,
+    "worstCpuMs": 5.813499450683594,
+    "culprit": "TimeUpdate.WaitForLastPresentationAndUpdateTime",
+    "topSelf": [
+        {
+            "name": "Idle",
+            "ms": 243.1499481201172,
+            "calls": 445,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Prepare",
+            "ms": 164.8614044189453,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "UpdateRendererBoundingVolumes",
+            "ms": 74.7857437133789,
+            "calls": 798,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 71.27808380126953,
+            "calls": 267,
+            "kb": 0.0
+        },
+        {
+            "name": "Render.Prepare",
+            "ms": 41.839500427246097,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Render",
+            "ms": 30.051597595214845,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "WaitForJobGroupID",
+            "ms": 26.64456558227539,
+            "calls": 1848,
+            "kb": 0.0
+        },
+        {
+            "name": "PlayerLoop",
+            "ms": 14.610300064086914,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "Camera.Render",
+            "ms": 9.674498558044434,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "Render.OpaqueGeometry",
+            "ms": 8.646201133728028,
+            "calls": 268,
+            "kb": 0.0
+        }
+    ],
+    "topGcOwners": [
+        {
+            "name": "Assembly-CSharp.dll!PlaceSystem::PlaceHud.Update() [Invoke]",
+            "ms": 0.0,
+            "calls": 18,
+            "kb": 0.52734375
+        }
+    ],
+    "worstSelf": [
+        {
+            "name": "UpdateRendererBoundingVolumes",
+            "ms": 1.0694999694824219,
+            "calls": 3,
+            "kb": 0.0
+        },
+        {
+            "name": "Idle",
+            "ms": 1.0104999542236329,
+            "calls": 2,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Prepare",
+            "ms": 0.7454000115394592,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 0.5824999809265137,
+            "calls": 2,
+            "kb": 0.0
+        },
+        {
+            "name": "Render.Prepare",
+            "ms": 0.48829999566078188,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Render",
+            "ms": 0.21369999647140504,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "PlayerLoop",
+            "ms": 0.17749999463558198,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "DXGI.WaitOnSwapChain",
+            "ms": 0.14429999887943269,
+            "calls": 1,
+            "kb": 0.0
+        }
+    ],
+    "worstPath": [
+        {
+            "name": "PlayerLoop",
+            "ms": 16.811199188232423,
+            "calls": 1,
+            "kb": 0.0
+        },
+        {
+            "name": "TimeUpdate.WaitForLastPresentationAndUpdateTime",
+            "ms": 11.150699615478516,
+            "calls": 1,
+            "kb": 0.0
+        }
+    ],
+    "renderThreadSelf": [
+        {
+            "name": "RenderLoop",
+            "ms": 481.992919921875,
+            "calls": 2062,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Render",
+            "ms": 292.95562744140627,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderTexture.ResolveAA",
+            "ms": 16.31009292602539,
+            "calls": 268,
+            "kb": 0.0
+        },
+        {
+            "name": "CreateCommittedResourceWithTag",
+            "ms": 11.958399772644043,
+            "calls": 17,
+            "kb": 0.0
+        },
+        {
+            "name": "Gfx.DrawDynamic",
+            "ms": 9.835290908813477,
+            "calls": 553,
+            "kb": 0.0
+        },
+        {
+            "name": "Camera.Render",
+            "ms": 8.119998931884766,
+            "calls": 268,
+            "kb": 0.0
+        }
+    ],
+    "focus": "OrbitJob",
+    "focusThreads": 1,
+    "focusFrames": 268,
+    "focusFrame": 251,
+    "focusThreadsPerFrame": 1.0,
+    "focusMsPerFrame": 0.9208375811576843,
+    "focusSpanMs": 0.924135148525238,
+    "orbitMainMs": 0.9077292084693909,
+    "orbitMainMaxMs": 1.1929000616073609,
+    "jobWorkMsPerFrame": 19.366947174072267,
+    "mainWaitForJobsMs": 0.09942001849412918,
+    "jobThreadSelf": [
+        {
+            "name": "RenderForward.RenderLoopJob",
+            "ms": 2062.755126953125,
+            "calls": 40393,
+            "kb": 0.0
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "ms": 1014.808837890625,
+            "calls": 4021,
+            "kb": 0.0
+        },
+        {
+            "name": "RenderForwardOpaque.Sort",
+            "ms": 912.955322265625,
+            "calls": 13381,
+            "kb": 0.0
+        },
+        {
+            "name": "SplitJobConsumer",
+            "ms": 369.41497802734377,
+            "calls": 19180,
+            "kb": 0.0
+        },
+        {
+            "name": "Batch.FillInstanceProperties",
+            "ms": 261.905517578125,
+            "calls": 22273,
+            "kb": 0.0
+        },
+        {
+            "name": "UnityEngine.CoreModule.dll!::ExecuteJobFunction.Invoke() [Invoke]",
+            "ms": 245.4248809814453,
+            "calls": 268,
+            "kb": 0.0
+        }
+    ]
+}
